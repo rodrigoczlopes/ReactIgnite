@@ -11,9 +11,7 @@ function App() {
       <Header />
 
         <div className={styles.whapper}>
-          <aside>
-            sidebar
-          </aside>
+          <Sidebar/>
           <main>
             <Post 
             author="Rodrigo Lopes"
