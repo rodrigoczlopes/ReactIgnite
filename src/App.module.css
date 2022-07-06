@@ -1,10 +1,10 @@
 .whapper {
-  max-width: 70rem; /* calculo de soma do whapper soma de tudo dividido por 16 para dar quantidade de rem */
+  max-width: 70rem; /* calculo de soma do whapper soma de tudo dividido por 16 para dar quantidade de rem "1 rem = 16px "*/
   margin: 2rem auto;
   padding: 0 1rem;
 
   display: grid;
-  grid-template-columns: 256px 1fr; /* 1 fr é o que caber na tela fr = flexisivel*/
+  grid-template-columns: 256px 1fr; /* 1 fr é o que caber na tela fr = flexível*/
 
   gap: 2rem; /* espaçamento entre as colunas de 32 px */
   align-items: flex-start; /* alinha sempre para o topo*/
