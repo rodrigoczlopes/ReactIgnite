@@ -1,0 +1,11 @@
+.sidebar {
+  backgroud: var(--gray-800);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cover{
+  width: 100%;
+  height:72px;
+  object-fit: cover;
+}
