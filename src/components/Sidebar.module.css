@@ -28,7 +28,7 @@
 }
 
 .avatar{
-  width: calc(3rem + 12px);
+  width: calc(3rem + 12px);/*calculo que muda a condição com base no border e outline*/
   height: calc(3rem + 12px);
   border-radius: 8px;
   border: 4px solid var(--gray-800);
@@ -55,4 +55,11 @@
   display:flex;
   align-items:center;
   justify-content: center;
+  gap: 0.50rem;
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.sidebar footer a:hover{
+  background: var(--blue-500);
+  color: var(--white);
 }
