@@ -58,3 +58,31 @@
   color: var(--red-500);
 
 }
+
+.commentContent p{
+  margin-top: 1rem;
+  color:var(--gray-300);
+}
+
+.commentBox footer {
+  margin-top: 1rem;
+}
+
+.commentBox footer button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor:pointer;
+
+  display: flex;
+  align-items:center;
+}
+
+.commentBox footer button:hover {
+  color:var(--blue-300);
+
+}
+
+.commentBox footer button svg {
+  margin-right: 0.5rem;
+}
