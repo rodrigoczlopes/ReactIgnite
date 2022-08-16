@@ -10,3 +10,14 @@
   align-items: flex-start; /* alinha sempre para o topo*/
 
 }
+
+@media (max-width: 768px) {
+  html{
+    font-size: 87.5%; /*o calculo foi feito em regra de três 16 px é 100, 14 é  87,5 14*100/16 */
+  }
+
+  .whapper{
+    grid-template-columns: 1fr;
+  }
+}
+
