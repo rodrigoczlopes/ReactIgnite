@@ -4,12 +4,11 @@ import styles from './Post.module.css';
 import { Avatar } from './Avatar';
 
 export function Post(props) {
-  console.log(props);
   return(
     <article className={styles.post}> 
       <header>
         <div className={styles.author}>
-          <Avatar hasBorder src="https://github.com/rodrigoczlopes.png" />
+          <Avatar src={props.author.avatarUrl} />
           <div className={styles.authorInfo}>
             <strong>Rodrigo Lopes</strong>
             <span>Web Developer</span>
