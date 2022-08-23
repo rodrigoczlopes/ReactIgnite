@@ -8,7 +8,7 @@ const posts = [
   {
     id: 1,
     author:{
-      avatarUrl:'http://github.com.br/rodrigoczlopes.png',
+      avatarUrl:'http://github.com/rodrigoczlopes.png',
       name: 'Rodrigo Lopes',
       role: 'Developer'
     },
@@ -23,7 +23,7 @@ const posts = [
   {
     id: 2,
     author:{
-      avatarUrl:'http://github.com.br/rodrigoczlopes.png',
+      avatarUrl:'http://github.com/rodrigoczlopes.png',
       name: 'Juliete Figueiredo',
       role: 'Educator'
     },
