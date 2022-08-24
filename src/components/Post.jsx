@@ -6,6 +6,14 @@ import styles from './Post.module.css';
 
 import { Avatar } from './Avatar';
 
+
+const comments = [
+  1,
+  2,
+  3,
+];
+
+
 export function Post({author, publishedAt, content}) {
   const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'ás' HH:mm'h'",{
     locale: ptBR,
@@ -16,6 +24,10 @@ export function Post({author, publishedAt, content}) {
     addSuffix: true,
   })
 
+  function handleCreateNewComment() {
+    
+    console.log('oi')
+  }
 
 
   return(
@@ -44,7 +56,7 @@ export function Post({author, publishedAt, content}) {
         })}
       </div>
 
-      <form className={styles.commentForm}>
+      <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
 
         <textarea 
@@ -57,9 +69,9 @@ export function Post({author, publishedAt, content}) {
       </form>
 
        <div className={styles.commentList}>
-        <Comment />  
-        <Comment />  
-        <Comment />  
+          {comments.map(comment => {
+            return <Comment />
+          })}
        </div>
     </article>
   )
