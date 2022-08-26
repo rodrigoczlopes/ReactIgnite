@@ -5,8 +5,6 @@ import styles from './Post.module.css';
 import { Avatar } from './Avatar';
 import { useState } from 'react';
 
-
-
 export function Post({author, publishedAt, content}) {
 
   const [comments, setComments] = useState([
@@ -25,12 +23,10 @@ export function Post({author, publishedAt, content}) {
   })
 
   function handleCreateNewComment() {
-
     event.preventDefault()
 
-    comments.push(3);
+    setComments([...comments, comments.length + 1  ]);
   }
-
 
   return(
     <article className={styles.post}> 
